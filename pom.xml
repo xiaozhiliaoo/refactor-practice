@@ -6,7 +6,11 @@
 
     <groupId>org.lili</groupId>
     <artifactId>refactor-practice</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>api-design</module>
+    </modules>
 
 
     <dependencies>
@@ -23,6 +27,24 @@
         </dependency>
 
     </dependencies>
+
+
+    <build>
+        <finalName>refactor</finalName>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <debug>true</debug>
+                    <optimize>true</optimize>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
